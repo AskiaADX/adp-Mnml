@@ -255,6 +255,10 @@ body {
     font-size: 1.15rem;
 }
 
+div.question {
+    padding: 0 3em;
+}
+
 nav {
     text-align: center;
 }
