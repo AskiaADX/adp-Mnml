@@ -114,6 +114,37 @@ section.questionWrapper {
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+    /* FLEX PARENT */
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+div.question {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
 }
 
 nav.sideNext {
@@ -286,6 +317,7 @@ span.back {
     height: 3em;
     border: 0.1em solid var(--secondary-light-color);
     border-radius: 50%;
+    transition: border ease-in .2s;
 }
 
 span.back:after {
@@ -300,6 +332,16 @@ span.back:after {
     -moz-transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
+    transition: border ease-in .2s;
+}
+
+.navControl.btnBack:hover span.back {
+    border: 0.1em solid var(--secondary-color);
+}
+
+.navControl.btnBack:hover span.back:after {
+    border-top: 0.1em solid var(--secondary-color);
+    border-right: 0.1em solid var(--secondary-color);
 }
 
 span.next {
@@ -308,6 +350,7 @@ span.next {
     height: 3em;
     border: 0.1em solid var(--neutral-light-color);
     border-radius: 50%;
+    transition: border ease-in .2s;
 }
 
 span.next:after {
@@ -322,4 +365,5 @@ span.next:after {
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+    transition: border ease-in .2s;
 }
