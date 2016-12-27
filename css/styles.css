@@ -121,12 +121,12 @@ section.questionWrapper {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
     -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
@@ -135,16 +135,31 @@ section.questionWrapper {
     align-items: center;
 }
 
-div.question {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
+div.progress {
+    height: 1vh;
+    width: 50%;
+    background-color: var(--secondary-light-color);
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
     -webkit-flex: 0 1 auto;
     -ms-flex: 0 1 auto;
     flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: flex-start;
+    align-self: flex-start;
+}
+
+div.question {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: flex-start;
+    align-self: flex-start;
 }
 
 nav.sideNext {
