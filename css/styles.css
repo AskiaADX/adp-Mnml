@@ -3,15 +3,15 @@
 :root {
     font-size: 18px;
     box-sizing: border-box;
-    --primary-color: #48B8BB;
-    --primary-light-color: #64CED1;
-    --primary-dark-color: #369496;
-    --secondary-color: #4B4B4B;
-    --secondary-light-color: #ABABAB;
-    --secondary-dark-color: #3C3C3C;
-    --neutral-color: #D5D6D5;
-    --neutral-light-color: #F2F3F5;
-    --neutral-dark-color: #C3C5C6;
+    --primary-color: #A48AD4;
+    --primary-light-color: #C3A8F6;
+    --primary-dark-color: #927ABD;
+    --secondary-color: #1E202C;
+    --secondary-light-color: #333645;
+    --secondary-dark-color: #191B25;
+    --neutral-color: #F6F6F6;
+    --neutral-light-color: #FFF;
+    --neutral-dark-color: #EEE;
     --error-color: #C2453F;
     --font: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
 }
@@ -248,15 +248,16 @@ nav.sideNext {
 /* DECORATION */
 
 body {
-    color: var(--secondary-color);
-    background-color: var(--neutral-light-color);
+    color: var(--neutral-color);
+    background-color: var(--secondary-color);
     padding: 0;
     margin: 0;
     font-size: 1.15rem;
 }
 
 div.question {
-    padding: 0 3em;
+    padding: 0 6em;
+    line-height: 1.3;
 }
 
 nav {
@@ -274,21 +275,21 @@ nav {
 }
 
 .navControl.btnBack {
-    color: var(--secondary-light-color);
-    background-color: var(--neutral-light-color);
-    box-shadow: 1px 0 0 var(--neutral-color);
+    color: var(--neutral-light-color);
+    background-color: var(--secondary-color);
+    box-shadow: 1px 0 0 var(--secondary-light-color);
 }
 
 .navControl.btnNext {
     color: var(--neutral-light-color);
     background-color: var(--primary-color);
-    box-shadow: -1px 0 0 var(--primary-dark-color);
+    box-shadow: -1px 0 0 var(--secondary-dark-color);
 }
 
 .navControl.btnBack:hover {
-    color: var(--secondary-color);
-    background-color: var(--neutral-color);
-    box-shadow: 1px 0 0 var(--neutral-dark-color);
+    color: var(--neutral-color);
+    background-color: var(--secondary-light-color);
+    box-shadow: 1px 0 0 var(--secondary-dark-color);
 }
 
 .navControl.btnNext:hover {
@@ -298,8 +299,12 @@ nav {
 }
 
 @media (max-width: 960px) {
+    div.question {
+        padding: 0 2em;
+    }
+
     .navControl.btnBack {
-        box-shadow: 0 -1px 0 var(--neutral-color);
+        box-shadow: 0 -1px 0 var(--secondary-light-color);
     }
 
     .navControl.btnNext {
@@ -307,11 +312,11 @@ nav {
     }
 
     .navControl.btnBack:hover {
-        box-shadow: 0 -1px 0 var(--neutral-dark-color);
+        box-shadow: 0 -1px 0 var(--secondary-dark-color);
     }
 
     .navControl.btnNext:hover {
-        box-shadow: 0 -1px 0 var(--primary-color);
+        box-shadow: 0 -1px 0 var(--primary-light-color);
     }
 }
 
@@ -319,7 +324,7 @@ span.back {
     display: inline-block;
     width: 3em;
     height: 3em;
-    border: 0.1em solid var(--secondary-light-color);
+    border: .1em solid var(--secondary-light-color);
     border-radius: 50%;
     transition: border ease-in .2s;
 }
@@ -328,7 +333,7 @@ span.back:after {
     content: '';
 	display: inline-block;
     margin-top: .95em;
-    margin-left: 0.5em;
+    margin-left: .5em;
     width: 1em;
     height: 1em;
     border-top: 0.1em solid var(--secondary-light-color);
@@ -340,19 +345,19 @@ span.back:after {
 }
 
 .navControl.btnBack:hover span.back {
-    border: 0.1em solid var(--secondary-color);
+    border: .1em solid var(--secondary-color);
 }
 
 .navControl.btnBack:hover span.back:after {
-    border-top: 0.1em solid var(--secondary-color);
-    border-right: 0.1em solid var(--secondary-color);
+    border-top: .1em solid var(--secondary-color);
+    border-right: .1em solid var(--secondary-color);
 }
 
 span.next {
     display: inline-block;
     width: 3em;
     height: 3em;
-    border: 0.1em solid var(--neutral-light-color);
+    border: .1em solid var(--primary-dark-color);
     border-radius: 50%;
     transition: border ease-in .2s;
 }
@@ -364,10 +369,19 @@ span.next:after {
     margin-left: -0.5em;
     width: 1em;
     height: 1em;
-    border-top: 0.1em solid var(--neutral-light-color);
-    border-right: 0.1em solid var(--neutral-light-color);
+    border-top: 0.1em solid var(--primary-dark-color);
+    border-right: 0.1em solid var(--primary-dark-color);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: border ease-in .2s;
+}
+
+.navControl.btnNext:hover span.next {
+    border: .1em solid var(--neutral-light-color);
+}
+
+.navControl.btnNext:hover span.next:after {
+    border-top: .1em solid var(--neutral-light-color);
+    border-right: .1em solid var(--neutral-light-color);
 }
