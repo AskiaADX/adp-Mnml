@@ -467,7 +467,7 @@ label.controlHack {
     width: 62px;
     border-radius: 50px;
     background: var(--secondary-light-color);
-    position: absolute;
+    position: relative;
     outline: none;
     cursor: pointer;
     overflow: hidden;
@@ -500,8 +500,8 @@ input[type="checkbox"]:checked + label.controlHack::before {
 }
 
 label.responseLabel {
-    margin-left: 4em;
-    vertical-align: sub;
+    margin-left: .5em;
+    vertical-align: super;
     transition: color ease-in .2s;
 }
 
