@@ -90,6 +90,7 @@ nav {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 100;
 }
 
 nav.sideBack {
@@ -133,6 +134,7 @@ section.questionWrapper {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    overflow: auto;
 }
 
 div.progress {
@@ -229,6 +231,7 @@ nav.sideNext {
         -webkit-align-self: flex-end;
         -ms-flex-item-align: end;
         align-self: flex-end;
+        overflow: hidden;
     }
 
     nav.sideBack {
@@ -422,6 +425,27 @@ span.next:after {
 .navControl.btnNext:hover span.next:after {
     border-top: .1em solid var(--secondary-light-color);
     border-right: .1em solid var(--secondary-light-color);
+}
+
+@media (max-width: 960px) {
+    span.back, span.next {
+        width: 2em;
+        height: 2em;
+    }
+
+    span.back::after {
+        width: .5em;
+        height: .5em;
+        margin-top: .7em;
+        margin-left: .25em;
+    }
+
+    span.next::after {
+        width: .5em;
+        height: .5em;
+        margin-top: .7em;
+        margin-left: -0.25em;
+    }
 }
 
 /* SWITCH CONTROL */
