@@ -91,8 +91,8 @@ nav.sideBack {
 }
 
 section.questionWrapper {
-    -webkit-animation: 2s fadeIn;
-            animation: 2s fadeIn;
+    -webkit-animation: 3s fadeIn;
+            animation: 3s fadeIn;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     opacity: 0;
