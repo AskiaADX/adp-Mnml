@@ -102,6 +102,9 @@ nav.sideBack {
 }
 
 section.questionWrapper {
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
     -webkit-box-ordinal-group: 3;
     -moz-box-ordinal-group: 3;
     -webkit-order: 2;
@@ -135,6 +138,33 @@ section.questionWrapper {
     -ms-flex-align: center;
     align-items: center;
     overflow: auto;
+}
+
+@keyframes fadeIn {
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  10% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 div.progress {
