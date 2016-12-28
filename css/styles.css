@@ -361,6 +361,16 @@ nav {
     }
 }
 
+@media (max-height: 500px) and (orientation: landscape) {
+    nav {
+        height: 12vh
+    }
+
+    section.questionWrapper {
+        height: calc(100vh - 12vh);
+    }
+}
+
 span.back {
     display: inline-block;
     width: 3em;
