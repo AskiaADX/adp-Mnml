@@ -168,7 +168,7 @@ section.questionWrapper {
 }
 
 div.progress {
-    height: 1vh;
+    height: .85vh;
     width: 50%;
     background-color: var(--secondary-light-color);
     -webkit-order: 1;
