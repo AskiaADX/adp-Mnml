@@ -345,19 +345,19 @@ nav {
     }
 
     .navControl.btnBack {
-        box-shadow: 0 -1px 0 var(--secondary-light-color);
+        box-shadow: 0 1px 0 var(--secondary-light-color) inset;
     }
 
     .navControl.btnNext {
-        box-shadow: 0 -1px 0 var(--primary-dark-color);
+        box-shadow: 0 1px 0 var(--primary-dark-color) inset;
     }
 
     .navControl.btnBack:hover {
-        box-shadow: 0 -1px 0 var(--secondary-dark-color);
+        box-shadow: 0 1px 0 var(--secondary-dark-color) inset;
     }
 
     .navControl.btnNext:hover {
-        box-shadow: 0 -1px 0 var(--primary-light-color);
+        box-shadow: 0 1px 0 var(--primary-light-color) inset;
     }
 }
 
