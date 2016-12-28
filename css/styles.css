@@ -309,6 +309,20 @@ body {
     line-height: 1.4;
 }
 
+div.errors {
+    font-size: .9rem;
+    background-color: var(--primary-light-color);
+    color: var(--secondary-color);
+    border-radius: .1em;
+    padding: 1em;
+    margin: 0 0 2em 0;
+}
+
+div.errors ul {
+    margin: 0;
+    padding: 0 0 0 1em;
+}
+
 div.question {
     padding: 0 6em;
 }
