@@ -276,11 +276,11 @@ body {
     padding: 0;
     margin: 0;
     font-size: 1.15rem;
+    line-height: 1.4;
 }
 
 div.question {
     padding: 0 6em;
-    line-height: 1.4;
 }
 
 div.shortcut {
