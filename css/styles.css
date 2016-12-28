@@ -512,6 +512,11 @@ input[type="checkbox"]:checked + label.controlHack::before {
 label.responseLabel {
     margin-left: .5em;
     vertical-align: super;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     transition: color ease-in .2s;
 }
 
