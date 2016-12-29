@@ -280,6 +280,11 @@ div.question {
     padding: 0 6em;
 }
 
+div.surveyName {
+    color: var(--primary-color);
+    padding: 0 0 1em 0;
+}
+
 div.shortcut {
     text-transform: uppercase;
     font-weight: 100;
